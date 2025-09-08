@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><script type="text/javascript" src="chrome-extension://fjnbnpbmkenffdnngjfgmeleoegfcffe/static/js/contentInt.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soon..</title>
+<script src="files/saved_resource"></script>
+<link href="files/css2" rel="stylesheet">
+<script src="files/disable-devtool.min.js.download"></script>
+<script>
+    DisableDevtool({
+        ondevtoolopen: function(type) {
+            window.location.href = 'https://discord.gg/VqAxCZw5dP';
+        }
+    });
+</script>
+    <link href="files/css2(1)" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+            background: #000;
+            overflow: hidden;
+        }
+
+        #start {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.75rem;
+            font-weight: 200;
+            cursor: pointer;
+            user-select: none;
+            z-index: 10;
+            transition: opacity 0.3s;
+        }
+
+        #app {
+            opacity: 0;
+            transition: opacity 0.3s;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #app.visible {
+            opacity: 1;
+        }
+
+        .list {
+            display: flex;
+            gap: 20px;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            font-weight: 200;
+        }
+
+        .profile img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+
+        .profile p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .gif {
+            position: absolute;
+            right: -120px;
+            bottom: -5px;
+        }
+
+        .gif img {
+            height: 65vh;
+        }
+        
+    .soon {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+
+<div id="start">Click To Enter</div>
+
+    <div class="gif">
+        <img src="files/gif.gif">
+    </div>
+</div>
+
+<div id="app">
+<h1 class="soon">Coming Soon..</h1>
+</div>
+
+<audio id="audio" src="files/audio.mp3" preload="auto"></audio>
+
+<script>
+    const start = document.getElementById('start');
+    const app = document.getElementById('app');
+    const audio = document.getElementById('audio');
+
+    start.addEventListener('click', () => {
+        audio.play().catch(e => console.log(e));
+        start.style.opacity = '0';
+        setTimeout(() => {
+            start.style.display = 'none';
+            app.classList.add('visible');
+        }, 300);
+    });
+</script>
+
+
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+z
+    document.addEventListener('keydown', function(e) {
+        if (
+            e.key === "F12" || // F12
+            (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || // Ctrl+Shift+I/J/C
+            (e.ctrlKey && e.key === "U") // Ctrl+U
+        ) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+
+    DisableDevtool({
+        ondevtoolopen: function(type) {
+            window.location.href = 'https://discord.gg/VqAxCZw5dP';
+        }
+    });
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"></script>
+  <script>
+    snowStorm.snowColor = '#1B0F12';
+    snowStorm.flakesMaxActive = 200;
+    snowStorm.useTwinkleEffect = true;
+    snowStorm.autoStart = true;
+    snowStorm.freezeOnBlur = false;
+    snowStorm.excludeMobile = false;
+    snowStorm.flakesMax = 300;
+    snowStorm.flakeWidth = 12;
+    snowStorm.flakeHeight = 12;
+  </script>
+</body></html>
